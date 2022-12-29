@@ -1,0 +1,143 @@
+
+                
+          Container(
+            width: 250,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Expanded(
+                  child: ChildPage(
+                    selValue: selVal2,
+                  ),
+                ),
+                DropdownButton<String>(
+                  dropdownColor: const Color.fromARGB(255, 63, 63, 63),
+                  value: selVal2,
+                  onChanged: (String? value) {
+                    setState(() {
+                      selVal2 = value!;
+                    });
+                  },
+                  items: pkmn.map<DropdownMenuItem<String>>((itemone) {
+                    return DropdownMenuItem(
+                      value: natDex[pkmn.indexOf(itemone)],
+                      child: Text(itemone),
+                    );
+                  }).toList(),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            width: 250,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Expanded(
+                  child: ChildPage(
+                    selValue: selVal3,
+                  ),
+                ),
+                DropdownButton<String>(
+                  dropdownColor: const Color.fromARGB(255, 63, 63, 63),
+                  value: selVal3,
+                  onChanged: (String? value) {
+                    setState(() {
+                      selVal3 = value!;
+                    });
+                  },
+                  items: pkmn.map<DropdownMenuItem<String>>((itemone) {
+                    return DropdownMenuItem(
+                      value: natDex[pkmn.indexOf(itemone)],
+                      child: Text(itemone),
+                    );
+                  }).toList(),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            width: 250,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Expanded(
+                  child: ChildPage(
+                    selValue: selVal4,
+                  ),
+                ),
+                DropdownButton<String>(
+                  dropdownColor: const Color.fromARGB(255, 63, 63, 63),
+                  value: selVal4,
+                  onChanged: (String? value) {
+                    setState(() {
+                      selVal4 = value!;
+                    });
+                  },
+                  items: pkmn.map<DropdownMenuItem<String>>((itemone) {
+                    return DropdownMenuItem(
+                      value: natDex[pkmn.indexOf(itemone)],
+                      child: Text(itemone),
+                    );
+                  }).toList(),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            width: 250,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Expanded(
+                  child: ChildPage(
+                    selValue: selVal5,
+                  ),
+                ),
+                DropdownButton<String>(
+                  dropdownColor: const Color.fromARGB(255, 63, 63, 63),
+                  value: selVal5,
+                  onChanged: (String? value) {
+                    setState(() {
+                      selVal5 = value!;
+                    });
+                  },
+                  items: pkmn.map<DropdownMenuItem<String>>((itemone) {
+                    return DropdownMenuItem(
+                      value: natDex[pkmn.indexOf(itemone)],
+                      child: Text(itemone),
+                    );
+                  }).toList(),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            width: 250,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Expanded(
+                  child: ChildPage(
+                    selValue: selVal6,
+                  ),
+                ),
+                DropdownButton<String>(
+                  dropdownColor: const Color.fromARGB(255, 63, 63, 63),
+                  value: selVal6,
+                  onChanged: (String? value) {
+                    setState(() {
+                      selVal6 = value!;
+                    });
+                  },
+                  items: pkmn.map<DropdownMenuItem<String>>((itemone) {
+                    return DropdownMenuItem(
+                      value: natDex[pkmn.indexOf(itemone)],
+                      child: Text(itemone),
+                    );
+                  }).toList(),
+                ),
+              ],
+            ),
+          ),
+        ],
