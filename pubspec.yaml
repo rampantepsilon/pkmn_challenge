@@ -17,6 +17,7 @@ dependencies:
   window_manager: ^0.2.8
   dropdown_textfield: ^1.0.7
   search_choices: ^2.2.1
+  timer_count_down: ^2.2.1
 
 dev_dependencies:
   flutter_test:

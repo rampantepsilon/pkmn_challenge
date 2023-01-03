@@ -5,7 +5,7 @@ var selVal2 = '909';
 var selVal3 = '912';
 var selVal4 = '1007';
 var selVal5 = '1008';
-var selVal6 = '025';
+var selVal6 = '937';
 
 List<String> pkmn = [
   'Sprigatito',

@@ -1,32 +1,31 @@
-// ignore_for_file: unused_field, prefer_const_constructors
+// ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:search_choices/search_choices.dart';
-import 'list.dart';
+import 'natDexList.dart';
 
-class ChildPage extends StatelessWidget {
+class SChildPage extends StatelessWidget {
   final String selValue;
-  const ChildPage({super.key, required this.selValue});
+  const SChildPage({super.key, required this.selValue});
 
   @override
   Widget build(BuildContext context) {
     var link =
         // ignore: unnecessary_brace_in_string_interps
-        'https://www.serebii.net/scarletviolet/pokemon/new/${selValue}.png';
-    //'https://www.serebii.net/pokemon/art/${selValue}.png';
+        'https://www.serebii.net/pokemon/art/${selValue}.png';
 
     return Image.network(link);
   }
 }
 
-class PKMN1 extends StatefulWidget {
-  const PKMN1({super.key});
+class SPKMN1 extends StatefulWidget {
+  const SPKMN1({super.key});
 
   @override
-  State<PKMN1> createState() => _PKMN1State();
+  State<SPKMN1> createState() => _SPKMN1State();
 }
 
-class _PKMN1State extends State<PKMN1> {
+class _SPKMN1State extends State<SPKMN1> {
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -37,7 +36,7 @@ class _PKMN1State extends State<PKMN1> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Expanded(
-                child: ChildPage(
+                child: SChildPage(
                   selValue: selVal1,
                 ),
               ),
@@ -82,14 +81,14 @@ class _PKMN1State extends State<PKMN1> {
   }
 }
 
-class PKMN2 extends StatefulWidget {
-  const PKMN2({super.key});
+class SPKMN2 extends StatefulWidget {
+  const SPKMN2({super.key});
 
   @override
-  State<PKMN2> createState() => _PKMN2State();
+  State<SPKMN2> createState() => _SPKMN2State();
 }
 
-class _PKMN2State extends State<PKMN2> {
+class _SPKMN2State extends State<SPKMN2> {
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -100,7 +99,7 @@ class _PKMN2State extends State<PKMN2> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Expanded(
-                child: ChildPage(
+                child: SChildPage(
                   selValue: selVal2,
                 ),
               ),
@@ -160,14 +159,14 @@ class _PKMN2State extends State<PKMN2> {
   }
 }
 
-class PKMN3 extends StatefulWidget {
-  const PKMN3({super.key});
+class SPKMN3 extends StatefulWidget {
+  const SPKMN3({super.key});
 
   @override
-  State<PKMN3> createState() => _PKMN3State();
+  State<SPKMN3> createState() => _SPKMN3State();
 }
 
-class _PKMN3State extends State<PKMN3> {
+class _SPKMN3State extends State<SPKMN3> {
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -178,7 +177,7 @@ class _PKMN3State extends State<PKMN3> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Expanded(
-                child: ChildPage(
+                child: SChildPage(
                   selValue: selVal3,
                 ),
               ),
@@ -238,14 +237,14 @@ class _PKMN3State extends State<PKMN3> {
   }
 }
 
-class PKMN4 extends StatefulWidget {
-  const PKMN4({super.key});
+class SPKMN4 extends StatefulWidget {
+  const SPKMN4({super.key});
 
   @override
-  State<PKMN4> createState() => _PKMN4State();
+  State<SPKMN4> createState() => _SPKMN4State();
 }
 
-class _PKMN4State extends State<PKMN4> {
+class _SPKMN4State extends State<SPKMN4> {
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -256,7 +255,7 @@ class _PKMN4State extends State<PKMN4> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Expanded(
-                child: ChildPage(
+                child: SChildPage(
                   selValue: selVal4,
                 ),
               ),
@@ -316,14 +315,14 @@ class _PKMN4State extends State<PKMN4> {
   }
 }
 
-class PKMN5 extends StatefulWidget {
-  const PKMN5({super.key});
+class SPKMN5 extends StatefulWidget {
+  const SPKMN5({super.key});
 
   @override
-  State<PKMN5> createState() => _PKMN5State();
+  State<SPKMN5> createState() => _SPKMN5State();
 }
 
-class _PKMN5State extends State<PKMN5> {
+class _SPKMN5State extends State<SPKMN5> {
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -334,7 +333,7 @@ class _PKMN5State extends State<PKMN5> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Expanded(
-                child: ChildPage(
+                child: SChildPage(
                   selValue: selVal5,
                 ),
               ),
@@ -394,14 +393,14 @@ class _PKMN5State extends State<PKMN5> {
   }
 }
 
-class PKMN6 extends StatefulWidget {
-  const PKMN6({super.key});
+class SPKMN6 extends StatefulWidget {
+  const SPKMN6({super.key});
 
   @override
-  State<PKMN6> createState() => _PKMN6State();
+  State<SPKMN6> createState() => _SPKMN6State();
 }
 
-class _PKMN6State extends State<PKMN6> {
+class _SPKMN6State extends State<SPKMN6> {
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -412,7 +411,7 @@ class _PKMN6State extends State<PKMN6> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Expanded(
-                child: ChildPage(
+                child: SChildPage(
                   selValue: selVal6,
                 ),
               ),
